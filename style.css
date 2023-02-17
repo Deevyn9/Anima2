@@ -1,5 +1,112 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.container .half {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .half .animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.container .half .animation.one {
+  background-color: blue;
+  animation: meet1 1.5s ease-in-out 0s 1 forwards;
+  left: -100%;
+}
+
+.container .half .animation.two {
+  background-color: red;
+  animation: meet2 1.5s ease-in-out 0s 1 forwards;
+  right: -100%;
+}
+
+@keyframes meet1 {
+  from   {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes meet2 {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+.switch-col {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container .half .animation.one .switch-col {
+    right: -100%;
+    background-color: purple;
+    animation: switch1 .1s ease-in-out 1.45s 1 forwards;
+}
+
+@keyframes switch1 {
+    from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+.container .half .animation.two .switch-col {
+    left: -100%;
+    background-color: purple;
+    animation: switch2 .1s ease-in-out 1.45s 1 forwards;
+}
+
+@keyframes switch2 {
+    from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.container .sample__text {
+    position: absolute;
+    color: white;
+    top: -100%;
+    animation: text .5s ease-in 1.46s 1 forwards;
+}
+
+@keyframes text {
+    from {
+        top: -100%;
+    } to {
+        top: 47%;
+    }
 }

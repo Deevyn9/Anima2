@@ -31,13 +31,13 @@ body {
 }
 
 .container .half .animation.one {
-  background-color: blue;
+  background-color: #e5eaf5;
   animation: meet1 1.5s ease-in-out 0s 1 forwards;
   left: -100%;
 }
 
 .container .half .animation.two {
-  background-color: red;
+  background-color: #8458B3;
   animation: meet2 1.5s ease-in-out 0s 1 forwards;
   right: -100%;
 }
@@ -68,7 +68,7 @@ body {
 
 .container .half .animation.one .switch-col {
     right: -100%;
-    background-color: purple;
+    background-color: #d0bdf4;
     animation: switch1 .1s ease-in-out 1.45s 1 forwards;
 }
 
@@ -83,7 +83,7 @@ body {
 
 .container .half .animation.two .switch-col {
     left: -100%;
-    background-color: purple;
+    background-color: #d0bdf4;
     animation: switch2 .1s ease-in-out 1.45s 1 forwards;
 }
 
@@ -98,7 +98,8 @@ body {
 
 .container .sample__text {
     position: absolute;
-    color: white;
+    color: rgb(94, 93, 93);
+    font-size: 25px;
     top: -100%;
     animation: text .5s ease-in 1.46s 1 forwards;
 }
